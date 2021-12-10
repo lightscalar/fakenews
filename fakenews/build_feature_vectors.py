@@ -15,7 +15,7 @@ stemmer = PorterStemmer()
 
 
 def get_training_data(path_to_csv_file):
-    """Builds feature vectors from a csv file."""
+    """Loads text data from a CSV file into a pandas dataframe."""
     csv_data = pd.read_csv(path_to_csv_file)
     return csv_data
 
