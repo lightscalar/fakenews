@@ -20,7 +20,7 @@ def get_training_data(path_to_csv_file):
     return csv_data
 
 
-def extract_vocab(texts, nb_documents=250):
+def extract_vocab(texts, nb_documents=25):
     """Extract unique vocabulary from a sequence of texts."""
     token_set = set({})
     for text in tqdm(texts[:nb_documents]):
