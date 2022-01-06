@@ -45,8 +45,9 @@ if __name__ == "__main__":
 
     print(f"> {training_data.columns}")
     training_text = training_data["text"]
+    label = training_data["label"].tolist()
 
-    print(f"> Total of {len(training_text)} documents available.")
-    vocab = extract_vocab(training_text)
+    # print(f"> Total of {len(training_text)} documents available.")
+    # vocab = extract_vocab(training_text)
 
-    print(f"> The total number of distinct words is {len(vocab)}.")
+    # print(f"> The total number of distinct words is {len(vocab)}.")
